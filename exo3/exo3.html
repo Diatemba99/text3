@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="rectangle" 
+      style="background:blue;
+			width: 100px;
+			height: 100px; 
+			margin: 230px auto 0;
+      position: relative;">
+  </div>
+
+	<script >
+      
+       //debut pour les fonctions declancheurs
+       document.addEventListener('keydown', haut);
+       document.addEventListener('keyup', bas);
+       // fin des fonctions declancheurs
+        
+       
+       //fonction qui ramene vers le haut 
+       function haut(event) 
+       {
+           	if (event.key== "ArrowUp")
+           	 {
+               rectangle.style.top= "-250px";
+           	 }
+       }
+        
+      //fonction qui ramene vers le bas 
+       function bas(event) 
+       {
+           	 if (event.key== "ArrowUp")
+           	 {
+               rectangle.style.top= "0px";
+           	 }
+       }
+       
+		
+	</script>
+</body>
+</html>
